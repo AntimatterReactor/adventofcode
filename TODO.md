@@ -1,4 +1,5 @@
-- [ ] Apply license requisite to every code file
+- [x] Apply license requisite to every code file
 - [ ] Add build mechanisms
 - [ ] Add testing mechanisms
-- [ ] Add autodownload method (requires a way to auth AoC somehow)
+- [ ] Add benchmark mechanisms
+- [ ] Add autodownload method (requires a way to auth AoC somehow) => will be another project later.
