@@ -30,5 +30,8 @@ The theory behind 1-1's code is simple: in that it's not.
     3. Now check if the encountered chars really constitutes a number by checking the "magic"/"hash" against the number-word you want.
     4. If yes, set the number to `x` or `y` and set `xc` or `yc` to 1 (essentially locking it).
 
-Note: the encounter is done from the front and behind of the `buf` even if it's 1 loop.
+Note: the encounter is done from the front and behind of the `buf` even if it's 1 loop.<br>
 Note2: yes, `numericmagify` **is** a shabby, knockoff hash function.
+
+## Day 2
+
