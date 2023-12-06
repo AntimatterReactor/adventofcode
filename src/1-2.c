@@ -125,7 +125,7 @@ int main()
 {
     char str[64] = {""};
     int total = 0;
-    FILE* fp = fopen("inputs/input1.txt", "r");
+    FILE* fp = fopen("../inputs/input1.txt", "r");
     while (fgets(str, sizeof(str), fp) != NULL) {
         total += process_line(str, strnlen(str, sizeof(str)));
     }
