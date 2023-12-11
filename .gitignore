@@ -4,3 +4,5 @@
 # editor
 /.vscode
 inputs/
+.clangd
+cookies.txt
