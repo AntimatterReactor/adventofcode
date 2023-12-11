@@ -24,7 +24,7 @@
 #include <stdbool.h>
 #include <ctype.h>
 
-const bool process_line(const char *str, const size_t len, const int de)
+bool process_line(const char *str, const size_t len)
 {
     const char *mstr = strchr(str, ':') + 1;
     for (size_t i = 0; i < len; ++i) {
@@ -47,7 +47,7 @@ int main()
     uint_fast32_t total = 0;
     FILE* fp = fopen("../inputs/input2.txt", "r");
     for (int i = 1; fgets(str, sizeof(str), fp) != NULL; ++i) {
-        total += process_line(str, strnlen(str, sizeof(str)), i) ? i : 0;
+        total += process_line(str, strnlen(str, sizeof(str))) ? i : 0;
         memset(str, 0, sizeof(str));
         //printf("%s\n", str);
     }

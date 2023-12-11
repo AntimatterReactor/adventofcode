@@ -23,7 +23,7 @@
 #include <string.h>
 #include <stdint.h>
 
-const uint_fast32_t process_line(const char* buf, const size_t len)
+uint_fast32_t process_line(const char* buf, const size_t len)
 {
     uint_fast32_t z = 0;
     size_t k = 0;

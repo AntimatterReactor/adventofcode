@@ -23,7 +23,7 @@
 #include <string.h>
 #include <ctype.h>
 
-const uint_fast32_t process_line(const char *str, const size_t len, const int deb)
+uint_fast32_t process_line(const char *str, const size_t len, const int deb)
 {
     uint_fast32_t r=0, g=0, b=0, s=0;
     char k = 0;

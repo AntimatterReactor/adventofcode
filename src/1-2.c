@@ -25,7 +25,7 @@
 #include <string.h>
 
 // Assumes str all lowercase alphabet
-const uint_fast32_t numericmagify(const char* str, const size_t len)
+uint_fast32_t numericmagify(const char* str, const size_t len)
 {
     size_t tlen = len * 5 < sizeof(uint_fast32_t) * 8 ? len : sizeof(uint_fast32_t) * 3 / 2;
     uint_fast32_t r = 0;
@@ -40,7 +40,7 @@ const uint_fast32_t numericmagify(const char* str, const size_t len)
 int process_line(const char* buf, const size_t len)
 {
     int x = 0, y = 0, xc = 0, yc = 0;
-    for (int i = 0; i < len; i++)
+    for (size_t i = 0; i < len; i++)
     {
         switch (buf[i]) {
         case '0':
