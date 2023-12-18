@@ -2,4 +2,4 @@
 - [ ] Add build mechanisms
 - [ ] Add testing mechanisms
 - [ ] Add benchmark mechanisms
-- [ ] Add autodownload method (requires a way to auth AoC somehow) => will be another project later.
+- [x] Add autodownload method (requires a way to auth AoC somehow) => will be another project later.
