@@ -41,7 +41,7 @@ int main()
     uint_fast32_t total = 0;
     FILE* fp = fopen("../inputs/input1.txt", "r");
     while (fgets(str, sizeof(str), fp) != NULL) {
-        total += process_line(str, strnlen(str, sizeof(str)));
+        total += process_line(str, strlen(str));
         // printf("%lu\n", total);
     }
     fclose(fp);
