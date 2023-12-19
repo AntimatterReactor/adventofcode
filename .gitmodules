@@ -1,0 +1,3 @@
+[submodule "lib/ctl"]
+	path = lib/ctl
+	url = git@github.com:glouw/ctl.git
