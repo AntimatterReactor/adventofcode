@@ -39,7 +39,7 @@ int main()
 {
     char str[64] = {""};
     uint_fast32_t total = 0;
-    FILE* fp = fopen("../inputs/input1.txt", "r");
+    FILE* fp = fopen("input.txt", "r");
     while (fgets(str, sizeof(str), fp) != NULL) {
         total += process_line(str, strlen(str));
         // printf("%lu\n", total);
