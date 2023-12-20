@@ -1,9 +1,5 @@
 #! /usr/bin/bash
 
-if [ ! -v INPUTS_DIR ]; then 
-    INPUTS_DIR="inputs"
-fi
-
 if [ -z "$1" ]; then
 cat <<-EOF
 Fetch AoC input for DAYNUMBER using COOKIES
@@ -32,4 +28,4 @@ EOF
 exit 1
 fi
 
-wget --no-cookies --header="$COOKIES" "https://adventofcode.com/2023/day/$1/input" -O "$INPUTS_DIR/input$1.txt"
+wget --no-cookies --header="$COOKIES" "https://adventofcode.com/2023/day/$(printf "%d" "$1")/input" -O "day$(printf "%02d" "$1")/input.txt"
