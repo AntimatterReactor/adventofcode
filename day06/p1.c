@@ -33,7 +33,7 @@ int main(void)
     unsigned tarr[4] = {0}, darr[4] = {0};
     const size_t rlen = 4;
     uint_fast32_t product = 0;
-    FILE* fp = fopen("../inputs/input6.txt", "r");
+    FILE* fp = fopen("input.txt", "r");
 
     fgets(str, sizeof(str), fp);
     processline(strchr(str, ':') + 1, tarr, rlen);

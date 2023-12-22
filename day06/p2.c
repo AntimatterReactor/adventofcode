@@ -32,7 +32,7 @@ int main(void)
     char str[64] = {""};
     uint_least64_t time = 0, dist = 0;
     uint_least64_t result = 0;
-    FILE* fp = fopen("../inputs/input6.txt", "r");
+    FILE* fp = fopen("input.txt", "r");
 
     fgets(str, sizeof(str), fp);
     time = processline(strchr(str, ':') + 1);
