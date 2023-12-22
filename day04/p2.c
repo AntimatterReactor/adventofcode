@@ -1,5 +1,5 @@
 /*
-    This program acts as a solution to the day 4 part 2 of AoC 2023
+    This program acts as a solution to day 4, part 2 of 2023's Advent of Code
     Copyright (C) 2023 by Ezra Alvarion
 
     This program is free software: you can redistribute it and/or modify
